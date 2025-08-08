@@ -219,26 +219,33 @@
 </script>
 <div style="margin-top: 30px;">
     <h2>🏏 Players List</h2>
-    <ul style="list-style: none; padding: 0;">
-        <li style="color: black; font-weight: bold;">⚡ SAPAN KUMAR SAHOO</li>
-        <li style="color: black; font-weight: bold;">🔥 PULAK MOHAPATRA</li>
-        <li style="color: black; font-weight: bold;">🎯 ARPAN PAL</li>
-        <li style="color: black; font-weight: bold;">🏹 DEBANGAN MAJI</li>
-        <li style="color: black; font-weight: bold;">🚀 Sameer Salunkhe</li>
-        <li style="color: black; font-weight: bold;">💎 Hardik Medhi</li>
-        <li style="color: black; font-weight: bold;">🌟 Nishant Deo</li>
-        <li style="color: black; font-weight: bold;">🏆 Raghav Wani</li>
-        <li style="color: black; font-weight: bold;">⚔️ Zuned</li>
-        <li style="color: black; font-weight: bold;">🎖️ Sridhar Gajendran</li>
-        <li style="color: black; font-weight: bold;">🔥 Deepan Patra</li>
-        <li style="color: black; font-weight: bold;">🎯 Kunal</li>
-        <li style="color: black; font-weight: bold;">🚀 Suyess</li>
-        <li style="color: black; font-weight: bold;">⚡ Prathamesh</li>
-        <li style="color: black; font-weight: bold;">🌟 Asilesh</li>
-        <li style="color: black; font-weight: bold;">🏹 Ajay Kumar</li>
-        <li style="color: black; font-weight: bold;">💎 Devesh</li>
-    </ul>
+    <div style="
+        display: flex; 
+        overflow-x: auto; 
+        gap: 10px; 
+        padding: 10px; 
+        white-space: nowrap;
+    ">
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ SAPAN KUMAR SAHOO</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 PULAK MOHAPATRA</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 ARPAN PAL</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 DEBANGAN MAJI</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Sameer Salunkhe</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Hardik Medhi</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Nishant Deo</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏆 Raghav Wani</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚔️ Zuned</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎖️ Sridhar Gajendran</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 Deepan Patra</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 Kunal</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Suyess</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ Prathamesh</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Asilesh</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 Ajay Kumar</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Devesh</div>
+    </div>
 </div>
+
 
 </body>
 </html>
