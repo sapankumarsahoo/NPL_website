@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NPL Football League</title>
+<style>
+    body {
+        background: linear-gradient(135deg, #1e3c72, #2a5298);
+        font-family: 'Poppins', sans-serif;
+        color: white;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+    }
+    header {
+        padding: 20px;
+        background-color: rgba(0,0,0,0.5);
+    }
+    header img {
+        width: 120px;
+        height: auto;
+    }
+    h1 {
+        font-size: 3em;
+        margin: 10px 0;
+        text-shadow: 2px 2px 8px black;
+    }
+    .intro {
+        font-size: 1.5em;
+        font-weight: bold;
+        margin-top: 10px;
+        height: 50px;
+    }
+    .teams {
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-top: 30px;
+    }
+    .team {
+        background: rgba(255, 255, 255, 0.1);
+        padding: 15px;
+        border-radius: 15px;
+        width: 250px;
+        margin: 10px;
+        box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    }
+    .team h2 {
+        font-size: 1.8em;
+        margin-bottom: 10px;
+    }
+    .players {
+        list-style: none;
+        padding: 0;
+    }
+    .players li {
+        font-size: 1.2em;
+        margin: 5px 0;
+    }
+    table {
+        margin: 30px auto;
+        border-collapse: collapse;
+        width: 80%;
+        background-color: rgba(0,0,0,0.3);
+        border-radius: 10px;
+        overflow: hidden;
+    }
+    th, td {
+        padding: 15px;
+        border: 1px solid white;
+        font-size: 1.2em;
+    }
+    th {
+        background-color: rgba(255,255,255,0.2);
+    }
+    tr:hover {
+        background-color: rgba(255,255,255,0.1);
+    }
+    /* Live Action Button */
+    .live-link {
+        display: inline-block;
+        margin: 40px auto;
+        padding: 15px 30px;
+        background: #ff0000;
+        color: white;
+        font-size: 1.3em;
+        text-decoration: none;
+        border-radius: 8px;
+        box-shadow: 0 0 15px rgba(255,0,0,0.7);
+        transition: 0.3s ease;
+    }
+    .live-link:hover {
+        background: #ff4d4d;
+        box-shadow: 0 0 20px rgba(255,255,255,0.9);
+        transform: scale(1.05);
+    }
+</style>
+</head>
+<body>
+
+<header>
+    <img src="/home/ssahoo/Desktop/NPL/logo.png" alt="NPL Logo">
+    <h1>⚽ NCRA Premier League ⚽</h1>
+    <div class="intro" id="dynamicText"></div>
+</header>
+
+<section class="teams">
+    <div class="team">
+        <h2>🔥 Team A</h2>
+        <ul class="players">
+            <li>🏆 Player A1</li>
+            <li>💪 Player A2</li>
+            <li>⚡ Player A3</li>
+            <li>🎯 Player A4</li>
+            <li>🧤 Goalkeeper A5</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>💥 Team B</h2>
+        <ul class="players">
+            <li>🏆 Player B1</li>
+            <li>💪 Player B2</li>
+            <li>⚡ Player B3</li>
+            <li>🎯 Player B4</li>
+            <li>🧤 Goalkeeper B5</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>🌟 Team C</h2>
+        <ul class="players">
+            <li>🏆 Player C1</li>
+            <li>💪 Player C2</li>
+            <li>⚡ Player C3</li>
+            <li>🎯 Player C4</li>
+            <li>🧤 Goalkeeper C5</li>
+        </ul>
+    </div>
+    <div class="team">
+        <h2>🚀 Team D</h2>
+        <ul class="players">
+            <li>🏆 Player D1</li>
+            <li>💪 Player D2</li>
+            <li>⚡ Player D3</li>
+            <li>🎯 Player D4</li>
+            <li>🧤 Goalkeeper D5</li>
+        </ul>
+    </div>
+</section>
+
+<h2>📊 Match Scores</h2>
+<table>
+    <tr>
+        <th>Round</th>
+        <th>Team A</th>
+        <th>Team B</th>
+        <th>Team C</th>
+        <th>Team D</th>
+    </tr>
+    <tr>
+        <td>Round 1</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Round 2</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+    <tr>
+        <td>Round 3</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+        <td>0</td>
+    </tr>
+</table>
+
+<!-- Live Action Link -->
+<a href="https://www.32auctions.com/my_auctions" class="live-link" target="_blank">🔴 Watch Live Action</a>
+
+<script>
+    // Dynamic typing effect
+    const textArray = [
+        "⚽ Welcome to the NCRA Premier League!",
+        "🔥 Exciting matches are coming your way!",
+        "🏆 Who will be the champion this year?"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let currentText = "";
+    let isDeleting = false;
+
+    function typeEffect() {
+        currentText = textArray[textIndex];
+        if (!isDeleting && charIndex <= currentText.length) {
+            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex++);
+            setTimeout(typeEffect, 100);
+        } else if (isDeleting && charIndex > 0) {
+            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex--);
+            setTimeout(typeEffect, 50);
+        } else {
+            if (!isDeleting) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1000);
+            } else {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+                setTimeout(typeEffect, 200);
+            }
+        }
+    }
+
+    typeEffect();
+</script>
+
+</body>
+</html>
+
