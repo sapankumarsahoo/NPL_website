@@ -217,31 +217,28 @@
 
     typeEffect();
 </script>
-<!-- Player List Section -->
-<section style="padding: 20px; text-align: center; background: linear-gradient(to right, #ffecd2, #fcb69f); border-top: 5px solid #ff6f61;">
-    <h2 style="color: #ff5733; font-family: 'Comic Sans MS', cursive; font-size: 2em;">🏏 Meet Our NPL Stars 🌟</h2>
-    <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 15px; margin-top: 20px;">
-
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🔥 SAPAN KUMAR SAHOO</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">⚡ PULAK MOHAPATRA</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🎯 ARPAN PAL</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">💥 DEBANGAN MAJI</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🏹 Sameer Salunkhe</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🚀 Hardik Medhi</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🌊 Nishant Deo</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🎵 Raghav Wani</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🎭 Zuned</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">⚔️ Sridhar Gajendran</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🐯 Deepan Patra</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🦅 Kunal</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">💎 Suyess</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">⚡ Prathamesh</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🌟 Asilesh</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🔥 Ajay Kumar</div>
-        <div style="background: white; padding: 10px 15px; border-radius: 10px; box-shadow: 0 4px 6px rgba(0,0,0,0.1); font-size: 1.1em;">🏆 Devesh</div>
-
-    </div>
-</section>
+<div style="margin-top: 30px;">
+    <h2>🏏 Players List</h2>
+    <ul style="list-style: none; padding: 0;">
+        <li style="color: black; font-weight: bold;">⚡ SAPAN KUMAR SAHOO</li>
+        <li style="color: black; font-weight: bold;">🔥 PULAK MOHAPATRA</li>
+        <li style="color: black; font-weight: bold;">🎯 ARPAN PAL</li>
+        <li style="color: black; font-weight: bold;">🏹 DEBANGAN MAJI</li>
+        <li style="color: black; font-weight: bold;">🚀 Sameer Salunkhe</li>
+        <li style="color: black; font-weight: bold;">💎 Hardik Medhi</li>
+        <li style="color: black; font-weight: bold;">🌟 Nishant Deo</li>
+        <li style="color: black; font-weight: bold;">🏆 Raghav Wani</li>
+        <li style="color: black; font-weight: bold;">⚔️ Zuned</li>
+        <li style="color: black; font-weight: bold;">🎖️ Sridhar Gajendran</li>
+        <li style="color: black; font-weight: bold;">🔥 Deepan Patra</li>
+        <li style="color: black; font-weight: bold;">🎯 Kunal</li>
+        <li style="color: black; font-weight: bold;">🚀 Suyess</li>
+        <li style="color: black; font-weight: bold;">⚡ Prathamesh</li>
+        <li style="color: black; font-weight: bold;">🌟 Asilesh</li>
+        <li style="color: black; font-weight: bold;">🏹 Ajay Kumar</li>
+        <li style="color: black; font-weight: bold;">💎 Devesh</li>
+    </ul>
+</div>
 
 </body>
 </html>
