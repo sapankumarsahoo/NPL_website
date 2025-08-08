@@ -95,6 +95,41 @@
         box-shadow: 0 0 20px rgba(255,255,255,0.9);
         transform: scale(1.05);
     }
+
+.pass-animation {
+    position: relative;
+    width: 300px;
+    height: 100px;
+    margin: 30px auto;
+}
+
+.player {
+    font-size: 50px;
+    position: absolute;
+    top: 20px;
+}
+
+.player:first-child {
+    left: 0;
+}
+
+.player:last-child {
+    right: 0;
+}
+
+.ball {
+    font-size: 40px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+    animation: pass 2s infinite alternate ease-in-out;
+}
+
+@keyframes pass {
+    from { left: 50px; transform: rotate(0deg); }
+    to { left: 230px; transform: rotate(360deg); }
+}
+
 </style>
 </head>
 <body>
@@ -148,6 +183,18 @@
     </div>
 </section>
 
+
+<!-- Player Passing Animation -->
+<div class="pass-animation">
+    <span class="player">🧑‍🦱</span>
+    <span class="ball">⚽</span>
+    <span class="player">🧑‍🦰</span>
+</div>
+<!-- End Animation -->
+
+
+
+    
 <h2>📊 Match Scores</h2>
 <table>
     <tr>
