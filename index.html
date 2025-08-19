@@ -196,37 +196,83 @@
 
 
     
-<h2>📊 Match Scores</h2>
-<table>
-    <tr>
-        <th>Round</th>
-        <th>Team A</th>
-        <th>Team B</th>
-        <th>Team C</th>
-        <th>Team D</th>
-    </tr>
-    <tr>
-        <td>Round 1</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>Round 2</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-    <tr>
-        <td>Round 3</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-        <td>0</td>
-    </tr>
-</table>
+<h2>🏆 Tournament Matches</h2>
+
+<div class="rounds">
+  <!-- Round 1 -->
+  <div class="round">
+    <button class="round-btn" onclick="toggleRound('round1')">⚽ Round 1</button>
+    <div id="round1" class="matches">
+      <div class="match">
+        <div class="team"><img src="Pulak.png"><span>Pulak</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Debangan.png"><span>Debangan</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Arpan.png"><span>Arpan</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Ajay.png"><span>Ajay</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Sapan.png"><span>Sapan</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Hardik.png"><span>Hardik</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Sameer.png"><span>Sameer</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Kunal.png"><span>Kunal</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Nishant.png"><span>Nishant</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Zuned.png"><span>Zuned</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Raghav.png"><span>Raghav</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Deepan.png"><span>Deepan</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Round 2 -->
+  <div class="round">
+    <button class="round-btn" onclick="toggleRound('round2')">⚽ Round 2</button>
+    <div id="round2" class="matches">
+      <div class="match">
+        <div class="team"><img src="Pulak.png"><span>Pulak</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Ajay.png"><span>Ajay</span></div>
+      </div>
+      <div class="match">
+        <div class="team"><img src="Debangan.png"><span>Debangan</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Arpan.png"><span>Arpan</span></div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Final -->
+  <div class="round">
+    <button class="round-btn" onclick="toggleRound('final')">🏆 Final</button>
+    <div id="final" class="matches">
+      <div class="match">
+        <div class="team"><img src="Pulak.png"><span>Pulak</span></div>
+        <span class="vs">🔥</span>
+        <div class="team"><img src="Debangan.png"><span>Debangan</span></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+function toggleRound(id) {
+  let section = document.getElementById(id);
+  section.style.display = (section.style.display === "block") ? "none" : "block";
+}
+</script>
+
 
 <!-- Live Action Link -->
 <a href="https://www.32auctions.com/NPLfootball" class="live-link" target="_blank">🔴 Watch Live Auction</a>
