@@ -251,7 +251,6 @@
 
 
 
-<!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="UTF-8">
@@ -295,6 +294,45 @@
     .timing {
       font-size: 14px;
       color: #555;
+    }
+
+    /* Rules button */
+    .rules-btn {
+      margin-top: 40px;
+      padding: 12px 24px;
+      font-size: 16px;
+      background-color: #b22222;
+      color: white;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    .rules-btn:hover {
+      background-color: #8b1a1a;
+    }
+
+    /* Rules section (hidden by default) */
+    .rules-section {
+      display: none;
+      max-width: 800px;
+      margin: 20px auto;
+      background: #fff;
+      border: 1px solid #ccc;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: left;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    }
+    .rules-section h2 {
+      color: #b22222;
+      margin-bottom: 15px;
+    }
+    .rules-section ul {
+      padding-left: 20px;
+    }
+    .rules-section li {
+      margin-bottom: 8px;
     }
   </style>
 </head>
@@ -340,7 +378,35 @@
     </div>
   </div>
 
+  <!-- Rules Button -->
+  <button class="rules-btn" onclick="toggleRules()">NPL Football Rules</button>
+
+  <!-- Hidden Rules Section -->
+  <div id="rules" class="rules-section">
+    <h2>Football Rules</h2>
+    <ul>
+      <li>Each match consists of 2 halves of 15 minutes each.</li>
+      <li>Each team can have up to 7 players on the field.</li>
+      <li>No rough play or dangerous tackles are allowed.</li>
+      <li>If the match is a draw, penalty kicks will decide the winner.</li>
+      <li>Respect referees, players, and fair play at all times.</li>
+      <li>Teams must be ready at least 10 minutes before their scheduled match.</li>
+    </ul>
+  </div>
+
+  <script>
+    function toggleRules() {
+      var rules = document.getElementById("rules");
+      if (rules.style.display === "none" || rules.style.display === "") {
+        rules.style.display = "block";
+      } else {
+        rules.style.display = "none";
+      }
+    }
+  </script>
+
 </body>
+
 
 
 
