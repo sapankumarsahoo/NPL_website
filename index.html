@@ -409,8 +409,72 @@
 
 
 
+<!-- Live Action Link -->
+<a href="https://www.32auctions.com/NPLfootball" class="live-link" target="_blank">🔴 Watch Live Auction</a>
 
-    
+<script>
+    // Dynamic typing effect
+    const textArray = [
+        "⚽ Welcome to the NCRA Premier League!",
+        "🔥 Exciting matches are coming your way!",
+        "🏆 Who will be the champion this year?"
+    ];
+    let textIndex = 0;
+    let charIndex = 0;
+    let currentText = "";
+    let isDeleting = false;
+
+    function typeEffect() {
+        currentText = textArray[textIndex];
+        if (!isDeleting && charIndex <= currentText.length) {
+            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex++);
+            setTimeout(typeEffect, 100);
+        } else if (isDeleting && charIndex > 0) {
+            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex--);
+            setTimeout(typeEffect, 50);
+        } else {
+            if (!isDeleting) {
+                isDeleting = true;
+                setTimeout(typeEffect, 1000);
+            } else {
+                isDeleting = false;
+                textIndex = (textIndex + 1) % textArray.length;
+                setTimeout(typeEffect, 200);
+            }
+        }
+    }
+
+    typeEffect();
+</script>
+
+<div style="margin-top: 30px;">
+    <h2>🏏 Players List</h2>
+    <div style="
+        display: flex; 
+        overflow-x: auto; 
+        gap: 10px; 
+        padding: 10px; 
+        white-space: nowrap;
+    ">
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ SAPAN KUMAR SAHOO</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 PULAK MOHAPATRA</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 ARPAN PAL</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 DEBANGAN MAJI</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Sameer Salunkhe</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Hardik Medhi</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Nishant Deo</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏆 Raghav Wani</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚔️ Zuned</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎖️ Sridhar Gajendran</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 Deepan Patra</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 Kunal</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Suayess</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ Prathamesh</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Ashlesh</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 Ajay Kumar</div>
+        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Devesh</div>
+    </div>
+</div>
 
 <!-- Footer -->
 <footer style="text-align: center; padding: 10px; background: #222; color: white; font-size: 14px;">
@@ -419,4 +483,6 @@
 
 </body>
 </html>
+    
+
 
