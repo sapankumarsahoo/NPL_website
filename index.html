@@ -301,72 +301,100 @@
 
 
 
-<!-- Live Action Link -->
-<a href="https://www.32auctions.com/NPLfootball" class="live-link" target="_blank">🔴 Watch Live Auction</a>
-
-<script>
-    // Dynamic typing effect
-    const textArray = [
-        "⚽ Welcome to the NCRA Premier League!",
-        "🔥 Exciting matches are coming your way!",
-        "🏆 Who will be the champion this year?"
-    ];
-    let textIndex = 0;
-    let charIndex = 0;
-    let currentText = "";
-    let isDeleting = false;
-
-    function typeEffect() {
-        currentText = textArray[textIndex];
-        if (!isDeleting && charIndex <= currentText.length) {
-            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex++);
-            setTimeout(typeEffect, 100);
-        } else if (isDeleting && charIndex > 0) {
-            document.getElementById("dynamicText").textContent = currentText.substring(0, charIndex--);
-            setTimeout(typeEffect, 50);
-        } else {
-            if (!isDeleting) {
-                isDeleting = true;
-                setTimeout(typeEffect, 1000);
-            } else {
-                isDeleting = false;
-                textIndex = (textIndex + 1) % textArray.length;
-                setTimeout(typeEffect, 200);
-            }
-        }
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>NPL Elimination Rounds</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background: #f9f9f9;
+      color: #222;
+      text-align: center;
     }
+    h1 {
+      font-size: 36px;
+      color: #b22222;
+      margin-bottom: 30px;
+      text-transform: uppercase;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+    .chamber {
+      background: #fff;
+      border: 2px solid #b22222;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+      transition: transform 0.2s ease-in-out;
+    }
+    .chamber:hover {
+      transform: scale(1.05);
+    }
+    .teams {
+      font-weight: bold;
+      margin-bottom: 10px;
+    }
+    .timing {
+      font-size: 14px;
+      color: #555;
+    }
+  </style>
+</head>
+<body>
 
-    typeEffect();
-</script>
+  <h1>Elimination Rounds</h1>
 
-<div style="margin-top: 30px;">
-    <h2>🏏 Players List</h2>
-    <div style="
-        display: flex; 
-        overflow-x: auto; 
-        gap: 10px; 
-        padding: 10px; 
-        white-space: nowrap;
-    ">
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ SAPAN KUMAR SAHOO</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 PULAK MOHAPATRA</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 ARPAN PAL</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 DEBANGAN MAJI</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Sameer Salunkhe</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Hardik Medhi</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Nishant Deo</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏆 Raghav Wani</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚔️ Zuned</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎖️ Sridhar Gajendran</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🔥 Deepan Patra</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🎯 Kunal</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🚀 Suayess</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">⚡ Prathamesh</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🌟 Ashlesh</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">🏹 Ajay Kumar</div>
-        <div style="flex: 0 0 auto; background: #f1f1f1; padding: 10px 20px; border-radius: 8px; font-weight: bold; color: black;">💎 Devesh</div>
+  <div class="grid">
+    <!-- Chamber 1 -->
+    <div class="chamber">
+      <div class="teams">Raising Falcons vs Decan Titans</div>
+      <div class="timing">Tomorrow – 6:00 to 6:30 pm</div>
     </div>
-</div>
+
+    <!-- Chamber 2 -->
+    <div class="chamber">
+      <div class="teams">Pune Pandavas vs Decan Titans</div>
+      <div class="timing">Tuesday – 5:00 to 5:30 pm</div>
+    </div>
+
+    <!-- Chamber 3 -->
+    <div class="chamber">
+      <div class="teams">Khadki Killers vs Raising Falcons</div>
+      <div class="timing">Tuesday – 5:45 to 6:15 pm</div>
+    </div>
+
+    <!-- Chamber 4 -->
+    <div class="chamber">
+      <div class="teams">Pune Pandavas vs Decan Titans</div>
+      <div class="timing">Wednesday – 5:00 to 5:30 pm</div>
+    </div>
+
+    <!-- Chamber 5 -->
+    <div class="chamber">
+      <div class="teams">Khadki Killers vs Pune Pandavas</div>
+      <div class="timing">Wednesday – 5:45 to 6:15 pm</div>
+    </div>
+
+    <!-- Chamber 6 -->
+    <div class="chamber">
+      <div class="teams">Khadki Killers vs Raising Falcons</div>
+      <div class="timing">Wednesday – 6:30 to 7:00 pm</div>
+    </div>
+  </div>
+
+</body>
+
+
+
+    
 
 <!-- Footer -->
 <footer style="text-align: center; padding: 10px; background: #222; color: white; font-size: 14px;">
