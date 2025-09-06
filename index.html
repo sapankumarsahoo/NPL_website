@@ -385,6 +385,127 @@
 </div>
 
 
+<!-- SEMI-FINALS SECTION -->
+<section class="semis-section" style="padding:30px 20px; background: linear-gradient(180deg, rgba(255,250,240,0.02), rgba(255,250,240,0.00));">
+  <style>
+    /* Semi-finals styles (self-contained) */
+    .semis-title {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 48px;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      margin: 0 0 18px 0;
+      text-align: center;
+      background: linear-gradient(90deg,#ffd700,#ff9f00);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+
+    .semis-subtitle {
+      text-align:center;
+      color: #fff7e6;
+      margin-bottom: 24px;
+      font-size: 18px;
+      opacity: 0.95;
+    }
+
+    .semis-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+      max-width: 1200px;
+      margin: 0 auto;
+      align-items: stretch;
+    }
+
+    .semi-chamber {
+      background: linear-gradient(135deg, #fffdf2, #fff7d6);
+      border: 3px solid rgba(255, 215, 0, 0.9);
+      border-radius: 16px;
+      padding: 22px;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.25), 0 0 20px rgba(255,215,0,0.12) inset;
+      transition: transform .18s ease, box-shadow .18s ease;
+      text-align: center;
+      min-height: 150px;
+      display:flex;
+      flex-direction:column;
+      justify-content:center;
+    }
+
+    .semi-chamber:hover {
+      transform: translateY(-6px) scale(1.02);
+      box-shadow: 0 16px 40px rgba(0,0,0,0.35), 0 0 30px rgba(255,215,0,0.18) inset;
+    }
+
+    .semi-teams {
+      font-weight: 800;
+      font-size: 20px;
+      color: #222;
+      margin-bottom: 8px;
+    }
+
+    .semi-time {
+      color: #5b4a00;
+      font-weight: 600;
+      margin-bottom: 12px;
+    }
+
+    .semi-score {
+      font-size: 18px;
+      font-weight: 700;
+      color: #0b5138;
+      margin-bottom: 6px;
+    }
+
+    .semi-winner {
+      font-size: 14px;
+      font-weight: 700;
+      color: #8b3b00;
+    }
+
+    /* Mobile responsiveness */
+    @media (max-width: 900px) {
+      .semis-grid { grid-template-columns: 1fr; }
+      .semis-title { font-size: 36px; }
+    }
+  </style>
+
+  <h2 class="semis-title">Semi-Finals</h2>
+  <p class="semis-subtitle">Highlighted — higher importance than elimination rounds. (3 matches)</p>
+
+  <div class="semis-grid">
+    <!-- Match A -->
+    <div class="semi-chamber" id="semi-1">
+      <div class="semi-teams">Khadki Killers <strong>vs</strong> United Falcons</div>
+      <div class="semi-time">Date: Sunday — 5:00 PM to 5:30 PM</div>
+      <div class="semi-score">Score: Khadki Killers 2 — 1 United Falcons</div>
+      <div class="semi-winner">Winner: Khadki Killers 🏆</div>
+    </div>
+
+    <!-- Match B -->
+    <div class="semi-chamber" id="semi-2">
+      <div class="semi-teams">Khadki Killers <strong>vs</strong> Decan Titans</div>
+      <div class="semi-time">Date: Sunday — 6:00 PM to 6:30 PM</div>
+      <div class="semi-score">Score: Khadki Killers 1 — 3 Decan Titans</div>
+      <div class="semi-winner">Winner: Decan Titans 🏆</div>
+    </div>
+
+    <!-- Match C -->
+    <div class="semi-chamber" id="semi-3">
+      <div class="semi-teams">United Falcons <strong>vs</strong> Decan Titans</div>
+      <div class="semi-time">Date: Sunday — 7:00 PM to 7:30 PM</div>
+      <div class="semi-score">Score: United Falcons 2 — 2 Decan Titans</div>
+      <div class="semi-winner">Result: Draw — will be decided by penalties</div>
+    </div>
+  </div>
+</section>
+
+
+
+
+    
   <!-- Rules Button -->
   <button class="rules-btn" onclick="toggleRules()">NPL Football Rules</button>
 
