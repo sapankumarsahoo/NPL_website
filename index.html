@@ -249,72 +249,7 @@
 
 <!-- Table added here -->
 
-<!-- WINNERS SECTION -->
-<section class="winners-section" style="margin-top: 50px; text-align: center;">
-  <style>
-    .winners-title {
-      font-size: 42px;
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 20px;
-      background: linear-gradient(90deg, #ffcc00, #ff6600);
-      -webkit-background-clip: text;
-      background-clip: text;
-      color: transparent;
-      text-shadow: 2px 2px 10px rgba(255,140,0,0.7);
-      animation: glowPulse 2s infinite alternate;
-    }
 
-    .winners-collage {
-      max-width: 1000px;
-      margin: 0 auto;
-      border-radius: 16px;
-      overflow: hidden;
-      box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 25px rgba(255,215,0,0.6);
-      animation: collageAnimation 10s infinite alternate ease-in-out;
-    }
-
-    .winners-collage img {
-      width: 100%;
-      display: block;
-      border-radius: 16px;
-    }
-
-    /* Animation for glowing effect */
-    @keyframes glowPulse {
-      0% { text-shadow: 0 0 12px rgba(255,193,7,0.6), 0 0 20px rgba(255,140,0,0.3); }
-      100% { text-shadow: 0 0 25px rgba(255,193,7,1), 0 0 35px rgba(255,87,34,0.6); }
-    }
-
-    /* Collage animations */
-    @keyframes collageAnimation {
-      0%   { transform: scale(1) rotate(0deg); opacity: 0.8; }
-      25%  { transform: scale(1.05) rotate(-2deg); opacity: 1; }
-      50%  { transform: scale(1.02) rotate(2deg); opacity: 0.9; }
-      75%  { transform: scale(1.08) rotate(-1deg); opacity: 1; }
-      100% { transform: scale(1) rotate(0deg); opacity: 0.85; }
-    }
-  </style>
-
-  <h2 class="winners-title">🏆 Champions — Decan Titans 🏆</h2>
-  <div class="winners-collage">
-    <img src="winner_team_combo.jpg" alt="Winning Team Collage">
-  </div>
-</section>
-
-
-  <script>
-    function toggleRules() {
-      var rules = document.getElementById("rules");
-      if (rules.style.display === "none" || rules.style.display === "") {
-        rules.style.display = "block";
-      } else {
-        rules.style.display = "none";
-      }
-    }
-  </script>
-
-</body>
 
 
 <head>
@@ -639,7 +574,72 @@
   </div>
 </section>
 
+<!-- WINNERS SECTION -->
+<section class="winners-section" style="margin-top: 50px; text-align: center;">
+  <style>
+    .winners-title {
+      font-size: 42px;
+      font-weight: 900;
+      text-transform: uppercase;
+      margin-bottom: 20px;
+      background: linear-gradient(90deg, #ffcc00, #ff6600);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+      text-shadow: 2px 2px 10px rgba(255,140,0,0.7);
+      animation: glowPulse 2s infinite alternate;
+    }
 
+    .winners-collage {
+      max-width: 1000px;
+      margin: 0 auto;
+      border-radius: 16px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.4), 0 0 25px rgba(255,215,0,0.6);
+      animation: collageAnimation 10s infinite alternate ease-in-out;
+    }
+
+    .winners-collage img {
+      width: 100%;
+      display: block;
+      border-radius: 16px;
+    }
+
+    /* Animation for glowing effect */
+    @keyframes glowPulse {
+      0% { text-shadow: 0 0 12px rgba(255,193,7,0.6), 0 0 20px rgba(255,140,0,0.3); }
+      100% { text-shadow: 0 0 25px rgba(255,193,7,1), 0 0 35px rgba(255,87,34,0.6); }
+    }
+
+    /* Collage animations */
+    @keyframes collageAnimation {
+      0%   { transform: scale(1) rotate(0deg); opacity: 0.8; }
+      25%  { transform: scale(1.05) rotate(-2deg); opacity: 1; }
+      50%  { transform: scale(1.02) rotate(2deg); opacity: 0.9; }
+      75%  { transform: scale(1.08) rotate(-1deg); opacity: 1; }
+      100% { transform: scale(1) rotate(0deg); opacity: 0.85; }
+    }
+  </style>
+
+  <h2 class="winners-title">🏆 Champions — Decan Titans 🏆</h2>
+  <div class="winners-collage">
+    <img src="winner_team_combo.jpg" alt="Winning Team Collage">
+  </div>
+</section>
+
+
+  <script>
+    function toggleRules() {
+      var rules = document.getElementById("rules");
+      if (rules.style.display === "none" || rules.style.display === "") {
+        rules.style.display = "block";
+      } else {
+        rules.style.display = "none";
+      }
+    }
+  </script>
+
+</body>
 
     
 
