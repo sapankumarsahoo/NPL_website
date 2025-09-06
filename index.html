@@ -682,6 +682,184 @@
 <!-- Live Action Link -->
 <a href="https://www.32auctions.com/NPLfootball" class="live-link" target="_blank">🔴 Watch Live Auction</a>
 
+<!-- AWARDS SLIDING SECTION -->
+<section class="awards-section" style="padding:40px 20px; background: linear-gradient(180deg,#0f172a, #071234); color: #fff;">
+  <style>
+    .awards-title {
+      font-family: 'Poppins', Arial, sans-serif;
+      font-size: 32px;
+      font-weight: 900;
+      text-align: center;
+      margin-bottom: 18px;
+      letter-spacing: 1px;
+      background: linear-gradient(90deg,#ffd700,#ff6f00);
+      -webkit-background-clip: text;
+      background-clip: text;
+      color: transparent;
+    }
+    .awards-sub {
+      text-align: center;
+      color: #cfeccd;
+      margin-bottom: 28px;
+      opacity: 0.9;
+    }
+
+    .awards-carousel {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+      overflow: hidden;
+    }
+    .awards-track {
+      display: flex;
+      transition: transform 600ms ease-in-out;
+    }
+
+    .award-card {
+      flex: 0 0 100%;
+      background: linear-gradient(135deg, #fffdf2, #fff7d6);
+      border: 3px solid rgba(255, 215, 0, 0.9);
+      border-radius: 16px;
+      padding: 24px;
+      text-align: center;
+      color: #222;
+      box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+    }
+
+    .award-img {
+      width: 140px;
+      height: 140px;
+      object-fit: cover;
+      border-radius: 50%;
+      margin-bottom: 15px;
+      border: 4px solid #ffb300;
+    }
+
+    .award-title {
+      font-size: 22px;
+      font-weight: 800;
+      margin-bottom: 6px;
+      color: #8b3b00;
+    }
+    .award-role {
+      font-size: 18px;
+      font-weight: 600;
+      margin-bottom: 8px;
+      color: #0b5138;
+    }
+    .award-desc {
+      font-size: 14px;
+      color: #444;
+    }
+
+    .awards-controls {
+      position: absolute;
+      top: 50%;
+      left: 10px;
+      right: 10px;
+      display: flex;
+      justify-content: space-between;
+      transform: translateY(-50%);
+    }
+    .awards-btn {
+      background: rgba(0,0,0,0.5);
+      border: none;
+      color: #fff;
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      cursor: pointer;
+      font-size: 20px;
+    }
+    .awards-btn:hover {
+      background: rgba(0,0,0,0.8);
+    }
+  </style>
+
+  <h3 class="awards-title">🏅 Tournament Awards</h3>
+  <p class="awards-sub">Recognizing the best performances</p>
+
+  <div class="awards-carousel">
+    <div class="awards-track" id="awardsTrack">
+      
+      <!-- Card 1 -->
+      <div class="award-card">
+        <img src="arpan.jpg" alt="Arpan Pal" class="award-img">
+        <div class="award-title">Best Defender</div>
+        <div class="award-role">Arpan Pal</div>
+        <div class="award-desc">Rock-solid at the back with unmatched defensive skills.</div>
+      </div>
+
+      <!-- Card 2 -->
+      <div class="award-card">
+        <img src="debangan.jpg" alt="Debangan" class="award-img">
+        <div class="award-title">Best Goal Scorer</div>
+        <div class="award-role">Debangan</div>
+        <div class="award-desc">Clinical finisher and top scorer of the tournament.</div>
+      </div>
+
+      <!-- Card 3 -->
+      <div class="award-card">
+        <img src="saurav.jpg" alt="Saurav" class="award-img">
+        <div class="award-title">Best Goalkeeper</div>
+        <div class="award-role">Saurav</div>
+        <div class="award-desc">Exceptional saves and unmatched reflexes under pressure.</div>
+      </div>
+    </div>
+
+    <!-- Controls -->
+    <div class="awards-controls">
+      <button class="awards-btn" id="prevBtn">&#10094;</button>
+      <button class="awards-btn" id="nextBtn">&#10095;</button>
+    </div>
+  </div>
+
+  <script>
+    (function() {
+      const track = document.getElementById('awardsTrack');
+      const cards = Array.from(track.children);
+      const prevBtn = document.getElementById('prevBtn');
+      const nextBtn = document.getElementById('nextBtn');
+      let index = 0;
+
+      function update() {
+        track.style.transform = `translateX(${-index * 100}%)`;
+      }
+
+      prevBtn.addEventListener('click', () => {
+        index = (index - 1 + cards.length) % cards.length;
+        update();
+      });
+
+      nextBtn.addEventListener('click', () => {
+        index = (index + 1) % cards.length;
+        update();
+      });
+
+      // Auto slide
+      setInterval(() => {
+        index = (index + 1) % cards.length;
+        update();
+      }, 4000);
+    })();
+  </script>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
 <script>
     // Dynamic typing effect
     const textArray = [
@@ -717,6 +895,9 @@
     typeEffect();
 </script>
 
+
+
+    
 <div style="margin-top: 30px;">
   <h2>⚽ Players & Goals</h2>
   <div style="
